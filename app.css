@@ -70,3 +70,8 @@ button {
   align-items: center; /* centers horizontally */
   justify-content: center; /* centers vertically if needed */
 }
+.menu-container {
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
