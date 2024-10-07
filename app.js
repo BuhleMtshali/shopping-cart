@@ -2,7 +2,6 @@ import { data } from "./data.js";
 console.log(data);
 let menuContainer = document.getElementById("menu-container");
 let html = "";
-
 data.forEach((card) => {
   html += `<div class="card">
           <div class="image">
@@ -26,5 +25,4 @@ data.forEach((card) => {
           <!-- end of add btn -->
         </div>`;
 });
-
 menuContainer.innerHTML = html;
