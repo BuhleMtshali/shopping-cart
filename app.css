@@ -19,11 +19,52 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   min-height: 10vh;
 }
 
 h2 {
   font-weight: 700;
   color: var(--rose-900);
+}
+img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
+.image {
+  position: relative;
+}
+.cart {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+.addBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--red-btn);
+  border-radius: 10px;
+  padding: 5px 7px;
+  position: absolute;
+  z-index: 1;
+  top: 190px;
+  background-color: white;
+  cursor: pointer;
+}
+button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers horizontally */
+  justify-content: center; /* centers vertically if needed */
 }
