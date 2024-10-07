@@ -10,8 +10,8 @@ data.forEach((card) => {
           <!-- end of image -->
           <div class="info">
               <h3>${card.name}</h3>
-              <p>Category: ${card.category}</p>
-              <p>Price: $${card.price.toFixed(2)}</p>
+              <p class='catergory'> ${card.category}</p>
+              <p class='price'> $${card.price.toFixed(2)}</p>
             </div>
             <!-- end of info -->
           <div class="addBtn">

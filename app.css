@@ -13,6 +13,7 @@
 body {
   font-family: var(--font-family);
   background-color: var(--bg-color);
+  margin: 0; /* Ensures there's no default margin around the body */
 }
 
 .container {
@@ -71,7 +72,37 @@ button {
   justify-content: center; /* centers vertically if needed */
 }
 .menu-container {
-  width: 600px;
+  width: 100%; /* Adjust to use full width of the parent */
+  max-width: 600px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.catergory {
+  color: var(--rose-300);
+}
+.price {
+  color: var(--red-btn);
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  img {
+    width: 260px;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+  }
 }
